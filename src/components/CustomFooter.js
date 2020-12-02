@@ -3,8 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import LogoGithub from "react-ionicons/lib/LogoGithub";
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin";
 import LogoInstagram from "react-ionicons/lib/LogoInstagram";
-import LogoFacebook from "react-ionicons/lib/LogoFacebook";
-import LogoTwitter from "react-ionicons/lib/LogoTwitter";
+
 
 class CustomFooter extends Component {
     render() {

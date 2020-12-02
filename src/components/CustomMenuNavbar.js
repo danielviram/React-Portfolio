@@ -3,20 +3,21 @@ import {} from "react-bootstrap";
 import IosMenu from "react-ionicons/lib/IosMenu";
 import IosClose from "react-ionicons/lib/IosClose";
 
-class CustomMenuNavbar extends Conponent {
-    constructor(){
-        supper();
+class CustomMenuNavbar extends Component {
+  constructor() {
+    super();
 
-        this.state = {
-            showMenu: false,
-        };
-    }
+    this.state = {
+      showMenu: false,
+    };
+  }
 
-    render() {
-        return (
-            <div className="custom-menu-navbar background-light">
-                 <p className="custom-menu-navbar-title secondary">Daniel Viramontes</p>
-                 {!this.state.showMenu ? (
+  render() {
+    return (
+      <div className="custom-menu-navbar background-light">
+        <p className="custom-menu-navbar-title secondary">Daniel Viramontes</p>
+
+        {!this.state.showMenu ? (
           <IosMenu
             className="custom-menu-navbar-icon"
             fontSize="29px"
@@ -54,14 +55,15 @@ class CustomMenuNavbar extends Conponent {
                 </a>
               </li>
               <li className="custom-menu-navbar-li">
-                
                 <a
-                  className="custom-menu-navbar-link primary"  
-                  href="https://drive.google.com/file/d/1EwAwsE3t8-7Ql-wlDDsV0cOV6Ozdf5Kl/view?usp=sharing"  target="_black"
-                  >
-                    Resume
-                    </a>
+                  className="custom-menu-navbar-link primary"
+                  href="https://drive.google.com/file/d/1EwAwsE3t8-7Ql-wlDDsV0cOV6Ozdf5Kl/view?usp=sharing"
+                  target="_black"
+                >
+                  Resume
+                </a>
               </li>
+              
               <li id="contactMeLink">
                 <a
                   className="custom-menu-navbar-link primary"
@@ -79,6 +81,4 @@ class CustomMenuNavbar extends Conponent {
 }
 
 export default CustomMenuNavbar;
-
-
 
